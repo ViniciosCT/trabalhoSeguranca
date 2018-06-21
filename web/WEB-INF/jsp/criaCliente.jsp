@@ -24,7 +24,6 @@
     </label>
     <br>
     <br>
-    <br>
     <button form="cadastro" type="submit">Adicionar</button>
 
 </body>
