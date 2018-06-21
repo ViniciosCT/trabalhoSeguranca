@@ -1,0 +1,343 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="LavagemDeVeiculos@localhost">
+  <database-model serializer="dbm" rdbms="POSTGRES" format-version="4.7">
+    <root id="1"/>
+    <database id="2" parent="1" name="LavagemDeVeiculos">
+      <ObjectId>75203</ObjectId>
+      <Current>1</Current>
+      <Visible>1</Visible>
+    </database>
+    <database id="3" parent="1" name="postgres">
+      <ObjectId>12029</ObjectId>
+    </database>
+    <database id="4" parent="1" name="Feira">
+      <ObjectId>24578</ObjectId>
+    </database>
+    <database id="5" parent="1" name="Infectologia">
+      <ObjectId>24698</ObjectId>
+    </database>
+    <database id="6" parent="1" name="Restaurantes">
+      <ObjectId>24734</ObjectId>
+    </database>
+    <database id="7" parent="1" name="baula13092016">
+      <ObjectId>24770</ObjectId>
+    </database>
+    <database id="8" parent="1" name="autoRelacionamento">
+      <ObjectId>24835</ObjectId>
+    </database>
+    <database id="9" parent="1" name="pokemonGo">
+      <ObjectId>33028</ObjectId>
+    </database>
+    <database id="10" parent="1" name="vinhos">
+      <ObjectId>33029</ObjectId>
+    </database>
+    <database id="11" parent="1" name="eventos">
+      <ObjectId>33065</ObjectId>
+    </database>
+    <database id="12" parent="1" name="doceria">
+      <ObjectId>33136</ObjectId>
+    </database>
+    <database id="13" parent="1" name="doceriaV">
+      <ObjectId>33502</ObjectId>
+    </database>
+    <database id="14" parent="1" name="doceria2">
+      <ObjectId>33569</ObjectId>
+    </database>
+    <database id="15" parent="1" name="Empresa">
+      <ObjectId>33570</ObjectId>
+    </database>
+    <database id="16" parent="1" name="aulas">
+      <ObjectId>33588</ObjectId>
+    </database>
+    <database id="17" parent="1" name="clubeGatilho">
+      <ObjectId>33649</ObjectId>
+    </database>
+    <database id="18" parent="1" name="VotacaoBD">
+      <ObjectId>33796</ObjectId>
+    </database>
+    <database id="19" parent="1" name="Trabalhobd">
+      <ObjectId>33841</ObjectId>
+    </database>
+    <database id="20" parent="1" name="visoes">
+      <ObjectId>41988</ObjectId>
+    </database>
+    <database id="21" parent="1" name="TesteIsolamento">
+      <ObjectId>42315</ObjectId>
+    </database>
+    <database id="22" parent="1" name="TesteIsolamento2">
+      <ObjectId>42321</ObjectId>
+    </database>
+    <database id="23" parent="1" name="B1">
+      <ObjectId>50507</ObjectId>
+    </database>
+    <database id="24" parent="1" name="Tomada">
+      <ObjectId>58699</ObjectId>
+    </database>
+    <database id="25" parent="1" name="GerenciadorQualitat">
+      <ObjectId>66924</ObjectId>
+    </database>
+    <database id="26" parent="1" name="VideosTVHUSM">
+      <ObjectId>75160</ObjectId>
+    </database>
+    <role id="27" parent="1" name="ViniciosCT">
+      <ObjectId>66891</ObjectId>
+      <Inherit>1</Inherit>
+      <CanLogin>1</CanLogin>
+      <ConnectionLimit>-1</ConnectionLimit>
+      <ValidUntil>infinity</ValidUntil>
+    </role>
+    <role id="28" parent="1" name="postgres">
+      <ObjectId>10</ObjectId>
+      <SuperRole>1</SuperRole>
+      <Inherit>1</Inherit>
+      <CreateRole>1</CreateRole>
+      <CreateDb>1</CreateDb>
+      <CanLogin>1</CanLogin>
+      <Replication>1</Replication>
+      <ConnectionLimit>-1</ConnectionLimit>
+    </role>
+    <schema id="29" parent="2" name="public">
+      <ObjectId>2200</ObjectId>
+      <IntrospectionTimestamp>2018-06-16.01:31:52.639</IntrospectionTimestamp>
+      <IntrospectionStateNumber>1528</IntrospectionStateNumber>
+      <Current>1</Current>
+      <Visible>1</Visible>
+    </schema>
+    <schema id="30" parent="2" name="pg_catalog">
+      <ObjectId>11</ObjectId>
+    </schema>
+    <schema id="31" parent="2" name="pg_toast">
+      <ObjectId>99</ObjectId>
+    </schema>
+    <schema id="32" parent="2" name="pg_temp_1">
+      <ObjectId>11215</ObjectId>
+    </schema>
+    <schema id="33" parent="2" name="pg_toast_temp_1">
+      <ObjectId>11216</ObjectId>
+    </schema>
+    <schema id="34" parent="2" name="information_schema">
+      <ObjectId>11480</ObjectId>
+    </schema>
+    <sequence id="35" parent="29" name="seq_cliente">
+      <ObjectId>75326</ObjectId>
+      <StateNumber>1522</StateNumber>
+      <SequenceIdentity>1+50</SequenceIdentity>
+      <CacheSize>1</CacheSize>
+    </sequence>
+    <sequence id="36" parent="29" name="seq_funcionario">
+      <ObjectId>75328</ObjectId>
+      <StateNumber>1523</StateNumber>
+      <SequenceIdentity>1+50</SequenceIdentity>
+      <CacheSize>1</CacheSize>
+    </sequence>
+    <sequence id="37" parent="29" name="seq_log">
+      <ObjectId>75330</ObjectId>
+      <StateNumber>1524</StateNumber>
+      <SequenceIdentity>1+50</SequenceIdentity>
+      <CacheSize>1</CacheSize>
+    </sequence>
+    <sequence id="38" parent="29" name="seq_veiculo">
+      <ObjectId>75332</ObjectId>
+      <StateNumber>1525</StateNumber>
+      <SequenceIdentity>1+50</SequenceIdentity>
+      <CacheSize>1</CacheSize>
+    </sequence>
+    <table id="39" parent="29" name="cliente">
+      <ObjectId>75301</ObjectId>
+      <StateNumber>1528</StateNumber>
+    </table>
+    <table id="40" parent="29" name="funcionario">
+      <ObjectId>75306</ObjectId>
+      <StateNumber>1527</StateNumber>
+    </table>
+    <table id="41" parent="29" name="log">
+      <ObjectId>75314</ObjectId>
+      <StateNumber>1527</StateNumber>
+    </table>
+    <table id="42" parent="29" name="veiculo">
+      <ObjectId>75319</ObjectId>
+      <StateNumber>1528</StateNumber>
+    </table>
+    <column id="43" parent="39" name="id">
+      <Position>1</Position>
+      <DataType>bigint|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>1517</StateNumber>
+      <TypeId>20</TypeId>
+    </column>
+    <column id="44" parent="39" name="nome">
+      <Position>2</Position>
+      <DataType>varchar(100)|0</DataType>
+      <StateNumber>1517</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <index id="45" parent="39" name="cliente_pkey">
+      <ObjectId>75304</ObjectId>
+      <ColNames>id</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="46" parent="39" name="cliente_pkey">
+      <ObjectId>75305</ObjectId>
+      <ColNames>id</ColNames>
+      <UnderlyingIndexName>cliente_pkey</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <column id="47" parent="40" name="id">
+      <Position>1</Position>
+      <DataType>bigint|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>1518</StateNumber>
+      <TypeId>20</TypeId>
+    </column>
+    <column id="48" parent="40" name="login">
+      <Position>2</Position>
+      <DataType>varchar(100)|0</DataType>
+      <StateNumber>1518</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="49" parent="40" name="nome">
+      <Position>3</Position>
+      <DataType>varchar(100)|0</DataType>
+      <StateNumber>1518</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="50" parent="40" name="senha">
+      <Position>4</Position>
+      <DataType>bytea|0</DataType>
+      <StateNumber>1518</StateNumber>
+      <TypeId>17</TypeId>
+    </column>
+    <column id="51" parent="40" name="id_veiculo">
+      <Position>5</Position>
+      <DataType>bigint|0</DataType>
+      <StateNumber>1518</StateNumber>
+      <TypeId>20</TypeId>
+    </column>
+    <index id="52" parent="40" name="funcionario_pkey">
+      <ObjectId>75312</ObjectId>
+      <ColNames>id</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <index id="53" parent="40" name="uk_niyc18ow9xt8oaroq7hy5sjp8">
+      <ObjectId>75324</ObjectId>
+      <ColNames>login</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="54" parent="40" name="funcionario_pkey">
+      <ObjectId>75313</ObjectId>
+      <ColNames>id</ColNames>
+      <UnderlyingIndexName>funcionario_pkey</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <key id="55" parent="40" name="uk_niyc18ow9xt8oaroq7hy5sjp8">
+      <ObjectId>75325</ObjectId>
+      <ColNames>login</ColNames>
+      <UnderlyingIndexName>uk_niyc18ow9xt8oaroq7hy5sjp8</UnderlyingIndexName>
+    </key>
+    <foreign-key id="56" parent="40" name="fkoqgai38eh7hn403hsjtb4obkr">
+      <ObjectId>75334</ObjectId>
+      <ColNames>id_veiculo</ColNames>
+      <RefTableId>75319</RefTableId>
+      <RefColPositions>1</RefColPositions>
+      <RefTableName>veiculo</RefTableName>
+      <RefKeyName>veiculo_pkey</RefKeyName>
+      <RefColNames>id</RefColNames>
+    </foreign-key>
+    <column id="57" parent="41" name="id">
+      <Position>1</Position>
+      <DataType>bigint|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>1519</StateNumber>
+      <TypeId>20</TypeId>
+    </column>
+    <column id="58" parent="41" name="classe">
+      <Position>2</Position>
+      <DataType>varchar(255)|0</DataType>
+      <StateNumber>1519</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="59" parent="41" name="data_hora">
+      <Position>3</Position>
+      <DataType>timestamp|0</DataType>
+      <StateNumber>1519</StateNumber>
+      <TypeId>1114</TypeId>
+    </column>
+    <column id="60" parent="41" name="id_objeto">
+      <Position>4</Position>
+      <DataType>bigint|0</DataType>
+      <StateNumber>1519</StateNumber>
+      <TypeId>20</TypeId>
+    </column>
+    <column id="61" parent="41" name="id_funcionario">
+      <Position>5</Position>
+      <DataType>bigint|0</DataType>
+      <StateNumber>1519</StateNumber>
+      <TypeId>20</TypeId>
+    </column>
+    <index id="62" parent="41" name="log_pkey">
+      <ObjectId>75317</ObjectId>
+      <ColNames>id</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="63" parent="41" name="log_pkey">
+      <ObjectId>75318</ObjectId>
+      <ColNames>id</ColNames>
+      <UnderlyingIndexName>log_pkey</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="64" parent="41" name="fk2yi0a5vn3ewub5i81s1p7uj66">
+      <ObjectId>75339</ObjectId>
+      <ColNames>id_funcionario</ColNames>
+      <RefTableId>75306</RefTableId>
+      <RefColPositions>1</RefColPositions>
+      <RefTableName>funcionario</RefTableName>
+      <RefKeyName>funcionario_pkey</RefKeyName>
+      <RefColNames>id</RefColNames>
+    </foreign-key>
+    <column id="65" parent="42" name="id">
+      <Position>1</Position>
+      <DataType>bigint|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>1520</StateNumber>
+      <TypeId>20</TypeId>
+    </column>
+    <column id="66" parent="42" name="data">
+      <Position>2</Position>
+      <DataType>timestamp|0</DataType>
+      <StateNumber>1520</StateNumber>
+      <TypeId>1114</TypeId>
+    </column>
+    <column id="67" parent="42" name="placa">
+      <Position>3</Position>
+      <DataType>varchar(50)|0</DataType>
+      <StateNumber>1520</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="68" parent="42" name="id_cliente">
+      <Position>4</Position>
+      <DataType>bigint|0</DataType>
+      <StateNumber>1520</StateNumber>
+      <TypeId>20</TypeId>
+    </column>
+    <index id="69" parent="42" name="veiculo_pkey">
+      <ObjectId>75322</ObjectId>
+      <ColNames>id</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="70" parent="42" name="veiculo_pkey">
+      <ObjectId>75323</ObjectId>
+      <ColNames>id</ColNames>
+      <UnderlyingIndexName>veiculo_pkey</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="71" parent="42" name="fk1kg45228lnyl0qle6rjiojxth">
+      <ObjectId>75344</ObjectId>
+      <ColNames>id_cliente</ColNames>
+      <RefTableId>75301</RefTableId>
+      <RefColPositions>1</RefColPositions>
+      <RefTableName>cliente</RefTableName>
+      <RefKeyName>cliente_pkey</RefKeyName>
+      <RefColNames>id</RefColNames>
+    </foreign-key>
+  </database-model>
+</dataSource>
