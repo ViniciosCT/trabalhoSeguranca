@@ -15,6 +15,7 @@ public class Log {
     private Long idObjeto;
     private Funcionario funcionario;
     private Date dataHora;
+    private Tipo tipo;
 
     @Id
     @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "seq_log")
@@ -64,4 +65,18 @@ public class Log {
     public void setDataHora(Date dataHora) {
         this.dataHora = dataHora;
     }
+
+    @Column(name = "tipo")
+    public Tipo getTipo() {
+        return tipo;
+    }
+
+    public void setTipo(Tipo tipo) {
+        this.tipo = tipo;
+    }
+
+    public enum Tipo {
+        Create, Read, Update, Delete;
+    }
+
 }

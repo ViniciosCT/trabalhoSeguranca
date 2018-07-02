@@ -21,7 +21,10 @@
             <td>${v.placa}</td>
             <td>${v.cliente.nome}</td>
             <td>${v.dataEntrada}</td>
-            <td><a href="removeVeiculo.priv?&id=${v.id}"> Remover </a></td>
+            <td>
+                <a href="paginaEditaVeiculo.priv?&id=${v.id}"> Editar </a>
+                <a href="removeVeiculo.priv?&id=${v.id}"> Remover </a>
+            </td>
         </tr>
     </c:forEach>
     <br>

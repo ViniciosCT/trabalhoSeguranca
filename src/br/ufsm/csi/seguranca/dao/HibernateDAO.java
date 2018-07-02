@@ -21,22 +21,23 @@ import java.util.Map;
  * Created by cpol on 31/05/2017.
  */
 @Repository
-public class HibernateDAO {
+public class HibernateDAO implements HibernateDAOInterface {
 
     @Autowired
     private SessionFactory sessionFactory;
 
+    @Override
     public void criaObjeto(Object o) {
         sessionFactory.getCurrentSession().save(o);
     }
 
+    @Override
     public void removeObjeto(Object o) {
         sessionFactory.getCurrentSession().remove(o);
     }
 
-
-
-    public Collection<Object> listaObjetos(Class classe,
+    @Override
+    public Collection listaObjetos(Class classe,
                                            Map<String, String> likeMap,
                                            Integer maxResults,
                                            String propOrdem,
@@ -60,6 +61,7 @@ public class HibernateDAO {
         return criteria.list();
     }
 
+    @Override
     public Collection<Object> listaObjetosEquals(Class classe, Map<String, Object> equalsMap) {
         DetachedCriteria detachedCriteria = DetachedCriteria.forClass(classe);
         detachedCriteria.setResultTransformer(Criteria.DISTINCT_ROOT_ENTITY);
@@ -70,10 +72,12 @@ public class HibernateDAO {
         return detachedCriteria.getExecutableCriteria(sessionFactory.getCurrentSession()).list();
     }
 
+    @Override
     public Object carregaObjeto(Class classe, Serializable id) {
         return sessionFactory.getCurrentSession().get(classe, id);
     }
 
+    @Override
     public Usuario findUsuario(String login, String senha) throws NoSuchAlgorithmException, UnsupportedEncodingException {
         MessageDigest md = MessageDigest.getInstance("SHA-256");
         byte[] senhaSHA = md.digest(senha.getBytes("ISO-8859-1"));
@@ -85,6 +89,7 @@ public class HibernateDAO {
         return (Usuario) criteria.uniqueResult();
     }
 
+    @Override
     public Usuario findUsuarioHQL(String login, String senha) throws NoSuchAlgorithmException, UnsupportedEncodingException {
         MessageDigest md = MessageDigest.getInstance("SHA-256");
         byte[] senhaSHA = md.digest(senha.getBytes("ISO-8859-1"));

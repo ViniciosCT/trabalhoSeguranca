@@ -25,7 +25,10 @@
                     </c:forEach>
                 </ul>
             </td>
-            <td><a href="removeCliente.priv?&id=${c.id}"> Remover </a></td>
+            <td>
+                <a href="paginaEditaCliente.priv?&id=${c.id}"> Editar </a>
+                <a href="removeCliente.priv?&id=${c.id}"> Remover </a>
+            </td>
         </tr>
     </c:forEach>
     <br>

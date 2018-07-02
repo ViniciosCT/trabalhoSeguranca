@@ -7,7 +7,39 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a35ba38a-86e4-4b04-8bb1-8d315b1dc459" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/web/WEB-INF/jsp/criaCliente.jsp" afterPath="$PROJECT_DIR$/web/WEB-INF/jsp/criaCliente.jsp" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/br/ufsm/csi/seguranca/Util/UtilCliente.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/br/ufsm/csi/seguranca/Util/UtilLog.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/br/ufsm/csi/seguranca/Util/UtilTokenGenerator.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/br/ufsm/csi/seguranca/dao/HibernateDAODecorator.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/br/ufsm/csi/seguranca/dao/HibernateDAOInterface.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/web/WEB-INF/jsp/editaCliente.jsp" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/web/WEB-INF/jsp/editaFuncionario.jsp" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/web/WEB-INF/jsp/editaVeiculo.jsp" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/spring_teste_war_exploded/WEB-INF/classes/br/ufsm/csi/seguranca/controller/ClienteController.class" afterPath="$PROJECT_DIR$/out/artifacts/spring_teste_war_exploded/WEB-INF/classes/br/ufsm/csi/seguranca/controller/ClienteController.class" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/spring_teste_war_exploded/WEB-INF/classes/br/ufsm/csi/seguranca/controller/FuncionarioController.class" afterPath="$PROJECT_DIR$/out/artifacts/spring_teste_war_exploded/WEB-INF/classes/br/ufsm/csi/seguranca/controller/FuncionarioController.class" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/spring_teste_war_exploded/WEB-INF/classes/br/ufsm/csi/seguranca/controller/UsuarioController.class" afterPath="$PROJECT_DIR$/out/artifacts/spring_teste_war_exploded/WEB-INF/classes/br/ufsm/csi/seguranca/controller/UsuarioController.class" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/spring_teste_war_exploded/WEB-INF/classes/br/ufsm/csi/seguranca/controller/VeiculoController.class" afterPath="$PROJECT_DIR$/out/artifacts/spring_teste_war_exploded/WEB-INF/classes/br/ufsm/csi/seguranca/controller/VeiculoController.class" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/spring_teste_war_exploded/WEB-INF/classes/br/ufsm/csi/seguranca/dao/HibernateDAO.class" afterPath="$PROJECT_DIR$/out/artifacts/spring_teste_war_exploded/WEB-INF/classes/br/ufsm/csi/seguranca/dao/HibernateDAO.class" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/spring_teste_war_exploded/WEB-INF/classes/br/ufsm/csi/seguranca/model/Log.class" afterPath="$PROJECT_DIR$/out/artifacts/spring_teste_war_exploded/WEB-INF/classes/br/ufsm/csi/seguranca/model/Log.class" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/spring_teste_war_exploded/WEB-INF/jsp/listaClientes.jsp" afterPath="$PROJECT_DIR$/out/artifacts/spring_teste_war_exploded/WEB-INF/jsp/listaClientes.jsp" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/spring_teste_war_exploded/WEB-INF/jsp/listaFuncionarios.jsp" afterPath="$PROJECT_DIR$/out/artifacts/spring_teste_war_exploded/WEB-INF/jsp/listaFuncionarios.jsp" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/spring_teste_war_exploded/WEB-INF/jsp/listarVeiculos.jsp" afterPath="$PROJECT_DIR$/out/artifacts/spring_teste_war_exploded/WEB-INF/jsp/listarVeiculos.jsp" />
+      <change beforePath="$PROJECT_DIR$/out/production/spring-teste/br/ufsm/csi/seguranca/controller/ClienteController.class" afterPath="$PROJECT_DIR$/out/production/spring-teste/br/ufsm/csi/seguranca/controller/ClienteController.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/spring-teste/br/ufsm/csi/seguranca/controller/FuncionarioController.class" afterPath="$PROJECT_DIR$/out/production/spring-teste/br/ufsm/csi/seguranca/controller/FuncionarioController.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/spring-teste/br/ufsm/csi/seguranca/controller/UsuarioController.class" afterPath="$PROJECT_DIR$/out/production/spring-teste/br/ufsm/csi/seguranca/controller/UsuarioController.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/spring-teste/br/ufsm/csi/seguranca/controller/VeiculoController.class" afterPath="$PROJECT_DIR$/out/production/spring-teste/br/ufsm/csi/seguranca/controller/VeiculoController.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/spring-teste/br/ufsm/csi/seguranca/dao/HibernateDAO.class" afterPath="$PROJECT_DIR$/out/production/spring-teste/br/ufsm/csi/seguranca/dao/HibernateDAO.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/spring-teste/br/ufsm/csi/seguranca/model/Log.class" afterPath="$PROJECT_DIR$/out/production/spring-teste/br/ufsm/csi/seguranca/model/Log.class" />
+      <change beforePath="$PROJECT_DIR$/src/br/ufsm/csi/seguranca/controller/ClienteController.java" afterPath="$PROJECT_DIR$/src/br/ufsm/csi/seguranca/controller/ClienteController.java" />
+      <change beforePath="$PROJECT_DIR$/src/br/ufsm/csi/seguranca/controller/FuncionarioController.java" afterPath="$PROJECT_DIR$/src/br/ufsm/csi/seguranca/controller/FuncionarioController.java" />
+      <change beforePath="$PROJECT_DIR$/src/br/ufsm/csi/seguranca/controller/UsuarioController.java" afterPath="$PROJECT_DIR$/src/br/ufsm/csi/seguranca/controller/UsuarioController.java" />
+      <change beforePath="$PROJECT_DIR$/src/br/ufsm/csi/seguranca/controller/VeiculoController.java" afterPath="$PROJECT_DIR$/src/br/ufsm/csi/seguranca/controller/VeiculoController.java" />
+      <change beforePath="$PROJECT_DIR$/src/br/ufsm/csi/seguranca/dao/HibernateDAO.java" afterPath="$PROJECT_DIR$/src/br/ufsm/csi/seguranca/dao/HibernateDAO.java" />
+      <change beforePath="$PROJECT_DIR$/src/br/ufsm/csi/seguranca/model/Log.java" afterPath="$PROJECT_DIR$/src/br/ufsm/csi/seguranca/model/Log.java" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/jsp/listaClientes.jsp" afterPath="$PROJECT_DIR$/web/WEB-INF/jsp/listaClientes.jsp" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/jsp/listaFuncionarios.jsp" afterPath="$PROJECT_DIR$/web/WEB-INF/jsp/listaFuncionarios.jsp" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/jsp/listarVeiculos.jsp" afterPath="$PROJECT_DIR$/web/WEB-INF/jsp/listarVeiculos.jsp" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -75,50 +107,62 @@
         <item name="LavagemDeVeiculos: database" type="6d9b600a:PostgresImplModel$Database" />
         <item name="public: schema" type="a16502c0:PostgresImplModel$Schema" />
         <item name="tables" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="funcionario: table" type="a93d6ac6:PostgresImplModel$LocalTable" />
+        <item name="log: table" type="a93d6ac6:PostgresImplModel$LocalTable" />
       </path>
     </expand>
     <select />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="FuncionarioController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/br/ufsm/csi/seguranca/controller/FuncionarioController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="25" column="0" lean-forward="false" selection-start-line="25" selection-start-column="0" selection-end-line="33" selection-end-column="5" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="UsuarioController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/br/ufsm/csi/seguranca/controller/UsuarioController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="850">
-              <caret line="68" column="40" lean-forward="false" selection-start-line="68" selection-start-column="28" selection-end-line="68" selection-end-column="40" />
+            <state relative-caret-position="340">
+              <caret line="57" column="50" lean-forward="true" selection-start-line="57" selection-start-column="50" selection-end-line="57" selection-end-column="50" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="HelloController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/br/ufsm/csi/seguranca/controller/HelloController.java">
+      <file leaf-file-name="UtilTokenGenerator.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/br/ufsm/csi/seguranca/Util/UtilTokenGenerator.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="16" column="1" lean-forward="false" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
+            <state relative-caret-position="170">
+              <caret line="10" column="42" lean-forward="true" selection-start-line="10" selection-start-column="42" selection-end-line="10" selection-end-column="42" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ClienteController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/br/ufsm/csi/seguranca/controller/ClienteController.java">
+      <file leaf-file-name="HibernateDAODecorator.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/br/ufsm/csi/seguranca/dao/HibernateDAODecorator.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="833">
-              <caret line="62" column="0" lean-forward="false" selection-start-line="62" selection-start-column="0" selection-end-line="62" selection-end-column="0" />
+            <state relative-caret-position="153">
+              <caret line="20" column="38" lean-forward="true" selection-start-line="20" selection-start-column="38" selection-end-line="20" selection-end-column="38" />
+              <folding>
+                <element signature="e#659#660#0" expanded="true" />
+                <element signature="e#1262#1263#0" expanded="true" />
+                <element signature="e#1323#1324#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="HibernateDAOInterface.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/br/ufsm/csi/seguranca/dao/HibernateDAOInterface.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="16" column="17" lean-forward="false" selection-start-line="16" selection-start-column="17" selection-end-line="16" selection-end-column="17" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UtilCliente.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/br/ufsm/csi/seguranca/Util/UtilCliente.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="256">
+              <caret line="21" column="5" lean-forward="true" selection-start-line="21" selection-start-column="5" selection-end-line="21" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -126,71 +170,55 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/index.jsp">
+      <file leaf-file-name="ClienteController.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/br/ufsm/csi/seguranca/controller/ClienteController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="24" column="59" lean-forward="false" selection-start-line="24" selection-start-column="59" selection-end-line="24" selection-end-column="59" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="listar.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/WEB-INF/jsp/listar.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="15" column="12" lean-forward="false" selection-start-line="15" selection-start-column="10" selection-end-line="15" selection-end-column="12" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Log.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/br/ufsm/csi/seguranca/model/Log.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-324">
-              <caret line="14" column="23" lean-forward="true" selection-start-line="14" selection-start-column="23" selection-end-line="14" selection-end-column="23" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="criaCliente.jsp" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/web/WEB-INF/jsp/criaCliente.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="101">
-              <caret line="12" column="8" lean-forward="true" selection-start-line="12" selection-start-column="8" selection-end-line="12" selection-end-column="8" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="hello.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/WEB-INF/jsp/hello.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="20" column="9" lean-forward="false" selection-start-line="20" selection-start-column="9" selection-end-line="20" selection-end-column="9" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Veiculo.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/br/ufsm/csi/seguranca/model/Veiculo.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="11" column="28" lean-forward="false" selection-start-line="11" selection-start-column="28" selection-end-line="11" selection-end-column="28" />
+            <state relative-caret-position="169">
+              <caret line="38" column="12" lean-forward="true" selection-start-line="38" selection-start-column="12" selection-end-line="38" selection-end-column="12" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#818#819#0" expanded="true" />
-                <element signature="e#848#849#0" expanded="true" />
-                <element signature="e#895#896#0" expanded="true" />
-                <element signature="e#933#934#0" expanded="true" />
-                <element signature="e#996#997#0" expanded="true" />
-                <element signature="e#1030#1031#0" expanded="true" />
-                <element signature="e#1082#1083#0" expanded="true" />
-                <element signature="e#1128#1129#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="editaCliente.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/WEB-INF/jsp/editaCliente.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="9">
+              <caret line="12" column="66" lean-forward="false" selection-start-line="12" selection-start-column="61" selection-end-line="12" selection-end-column="66" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="VeiculoController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/br/ufsm/csi/seguranca/controller/VeiculoController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="203">
+              <caret line="41" column="5" lean-forward="true" selection-start-line="41" selection-start-column="5" selection-end-line="41" selection-end-column="5" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="HibernateDAO.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/br/ufsm/csi/seguranca/dao/HibernateDAO.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-68">
+              <caret line="26" column="42" lean-forward="true" selection-start-line="26" selection-start-column="42" selection-end-line="26" selection-end-column="42" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UtilLog.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/br/ufsm/csi/seguranca/Util/UtilLog.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="374">
+              <caret line="22" column="5" lean-forward="false" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
+              <folding>
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -201,8 +229,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Jsp File" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -222,29 +250,39 @@
         <option value="$PROJECT_DIR$/src/br/ufsm/csi/seguranca/model/exemplos/Usuario.java" />
         <option value="$PROJECT_DIR$/src/br/ufsm/csi/seguranca/model/Veiculo.java" />
         <option value="$PROJECT_DIR$/src/hibernate.cfg.xml" />
-        <option value="$PROJECT_DIR$/src/br/ufsm/csi/seguranca/model/Log.java" />
         <option value="$PROJECT_DIR$/web/WEB-INF/dispatcher-servlet.xml" />
-        <option value="$PROJECT_DIR$/src/br/ufsm/csi/seguranca/Util/UtilFuncionario.java" />
         <option value="$PROJECT_DIR$/web/WEB-INF/jsp/lista-usuarios.jsp" />
         <option value="$PROJECT_DIR$/src/br/ufsm/csi/seguranca/filtros/FiltroSeguranca.java" />
         <option value="$PROJECT_DIR$/web/WEB-INF/jsp/lista-funcionarios.jsp" />
         <option value="$PROJECT_DIR$/web/WEB-INF/jsp/criaUsuario.jsp" />
         <option value="$PROJECT_DIR$/web/index.jsp" />
-        <option value="$PROJECT_DIR$/web/WEB-INF/jsp/listaFuncionarios.jsp" />
-        <option value="$PROJECT_DIR$/src/br/ufsm/csi/seguranca/controller/FuncionarioController.java" />
-        <option value="$PROJECT_DIR$/web/WEB-INF/jsp/listarVeiculos.jsp" />
         <option value="$PROJECT_DIR$/web/WEB-INF/jsp/hello.jsp" />
         <option value="$PROJECT_DIR$/web/WEB-INF/jsp/criaFuncionario.jsp" />
-        <option value="$PROJECT_DIR$/src/br/ufsm/csi/seguranca/Util/UtilVeiculo.java" />
-        <option value="$PROJECT_DIR$/src/br/ufsm/csi/seguranca/controller/VeiculoController.java" />
-        <option value="$PROJECT_DIR$/web/WEB-INF/jsp/criaVeiculo.jsp" />
-        <option value="$PROJECT_DIR$/web/WEB-INF/jsp/listaClientes.jsp" />
         <option value="$PROJECT_DIR$/src/br/ufsm/csi/seguranca/model/Cliente.java" />
-        <option value="$PROJECT_DIR$/src/br/ufsm/csi/seguranca/controller/ClienteController.java" />
         <option value="$PROJECT_DIR$/src/br/ufsm/csi/seguranca/controller/HelloController.java" />
-        <option value="$PROJECT_DIR$/src/br/ufsm/csi/seguranca/controller/UsuarioController.java" />
         <option value="$PROJECT_DIR$/web/WEB-INF/jsp/listar.jsp" />
         <option value="$PROJECT_DIR$/web/WEB-INF/jsp/criaCliente.jsp" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/jsp/criaVeiculo.jsp" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/jsp/listaClientes.jsp" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/jsp/listaFuncionarios.jsp" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/jsp/listarVeiculos.jsp" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/jsp/editaFuncionario.jsp" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/jsp/editaVeiculo.jsp" />
+        <option value="$PROJECT_DIR$/src/br/ufsm/csi/seguranca/model/Log.java" />
+        <option value="$PROJECT_DIR$/src/br/ufsm/csi/seguranca/dao/HibernateDAO.java" />
+        <option value="$PROJECT_DIR$/src/br/ufsm/csi/seguranca/dao/HibernateDAOInterface.java" />
+        <option value="$PROJECT_DIR$/src/br/ufsm/csi/seguranca/Util/UtilCliente.java" />
+        <option value="$PROJECT_DIR$/src/br/ufsm/csi/seguranca/Util/UtilFuncionario.java" />
+        <option value="$PROJECT_DIR$/src/br/ufsm/csi/seguranca/Util/UtilVeiculo.java" />
+        <option value="$PROJECT_DIR$/src/br/ufsm/csi/seguranca/Util/UtilLog.java" />
+        <option value="$PROJECT_DIR$/src/br/ufsm/csi/seguranca/controller/FuncionarioController.java" />
+        <option value="$PROJECT_DIR$/src/br/ufsm/csi/seguranca/controller/VeiculoController.java" />
+        <option value="src:table:/b95ec7a1/f0bb5bae-6298-49e0-bc18-c88dd0532461/LavagemDeVeiculos.public.log" />
+        <option value="$PROJECT_DIR$/src/br/ufsm/csi/seguranca/controller/UsuarioController.java" />
+        <option value="$PROJECT_DIR$/src/br/ufsm/csi/seguranca/dao/HibernateDAODecorator.java" />
+        <option value="$PROJECT_DIR$/src/br/ufsm/csi/seguranca/Util/UtilTokenGenerator.java" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/jsp/editaCliente.jsp" />
+        <option value="$PROJECT_DIR$/src/br/ufsm/csi/seguranca/controller/ClienteController.java" />
       </list>
     </option>
   </component>
@@ -262,8 +300,8 @@
     <option name="CUSTOM_FILTER" />
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="648" />
-    <option name="width" value="725" />
+    <option name="x" value="676" />
+    <option name="width" value="697" />
     <option name="height" value="735" />
   </component>
   <component name="ProjectView">
@@ -313,13 +351,6 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="seguranca" type="462c0819:PsiDirectoryNode" />
               <item name="dao" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Seguranca-Final" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Seguranca-Final" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="seguranca" type="462c0819:PsiDirectoryNode" />
-              <item name="filtros" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Seguranca-Final" type="b2602c69:ProjectViewProjectNode" />
@@ -380,6 +411,7 @@
       <recent name="br.ufsm.csi.seguranca.model" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\v_c_t\Dropbox\Aulas\6_Semestre\TopicosAvancados\trabalhoHibernate\Seguranca-Final\src\br\ufsm\csi\seguranca\dao" />
       <recent name="C:\Users\v_c_t\Dropbox\Aulas\6_Semestre\TopicosAvancados\trabalhoHibernate\Seguranca-Final\src\br\ufsm\csi\seguranca\model" />
       <recent name="C:\Users\v_c_t\Dropbox\Aulas\6_Semestre\TopicosAvancados\trabalhoHibernate\Seguranca-Final\src\br\ufsm\csi\seguranca\model\exemplos" />
     </key>
@@ -567,12 +599,12 @@
       <workItem from="1528392878498" duration="4970000" />
       <workItem from="1528399116191" duration="1416000" />
       <workItem from="1528466755660" duration="42937000" />
-      <workItem from="1529468474843" duration="2597000" />
+      <workItem from="1529468474843" duration="40475000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="51920000" />
+    <option name="totallyTimeSpent" value="89798000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -584,18 +616,18 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.1913767" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1913767" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3057971" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30882353" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32843137" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.36867863" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25980392" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289256" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -654,103 +686,14 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="39" />
+      <breakpoints-dialog>
+        <breakpoints-dialog />
+      </breakpoints-dialog>
+      <option name="time" value="61" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/br/ufsm/csi/seguranca/controller/ClienteController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="833">
-          <caret line="62" column="0" lean-forward="false" selection-start-line="62" selection-start-column="0" selection-end-line="62" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/index.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="24" column="59" lean-forward="false" selection-start-line="24" selection-start-column="59" selection-end-line="24" selection-end-column="59" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/jsp/usuario.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/jsp/hello.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" column="9" lean-forward="false" selection-start-line="20" selection-start-column="9" selection-end-line="20" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/br/ufsm/csi/seguranca/model/Veiculo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="11" column="28" lean-forward="false" selection-start-line="11" selection-start-column="28" selection-end-line="11" selection-end-column="28" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#818#819#0" expanded="true" />
-            <element signature="e#848#849#0" expanded="true" />
-            <element signature="e#895#896#0" expanded="true" />
-            <element signature="e#933#934#0" expanded="true" />
-            <element signature="e#996#997#0" expanded="true" />
-            <element signature="e#1030#1031#0" expanded="true" />
-            <element signature="e#1082#1083#0" expanded="true" />
-            <element signature="e#1128#1129#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/jsp/listar.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="23" column="12" lean-forward="false" selection-start-line="23" selection-start-column="12" selection-end-line="23" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/dispatcher-servlet.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/br/ufsm/csi/seguranca/controller/UsuarioController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1037">
-          <caret line="80" column="40" lean-forward="false" selection-start-line="80" selection-start-column="21" selection-end-line="80" selection-end-column="40" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/dispatcher-servlet.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="555">
-          <caret line="37" column="87" lean-forward="false" selection-start-line="37" selection-start-column="68" selection-end-line="37" selection-end-column="87" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/br/ufsm/csi/seguranca/controller/UsuarioController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1200">
-          <caret line="80" column="40" lean-forward="false" selection-start-line="80" selection-start-column="21" selection-end-line="80" selection-end-column="40" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="das://table:/b95ec7a1/f0bb5bae-6298-49e0-bc18-c88dd0532461/LavagemDeVeiculos.public.usuario">
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
@@ -771,6 +714,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
           <caret line="10" column="13" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -801,14 +745,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="4" column="0" lean-forward="true" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/hibernate.cfg.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="59" lean-forward="false" selection-start-line="8" selection-start-column="59" selection-end-line="8" selection-end-column="59" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -820,80 +759,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/dispatcher-servlet.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="128">
-          <caret line="41" column="75" lean-forward="false" selection-start-line="41" selection-start-column="75" selection-end-line="41" selection-end-column="75" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
           <caret line="23" column="25" lean-forward="false" selection-start-line="23" selection-start-column="25" selection-end-line="23" selection-end-column="25" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/jsp/log.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="7" lean-forward="true" selection-start-line="14" selection-start-column="7" selection-end-line="14" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/br/ufsm/csi/seguranca/filtros/FiltroSeguranca.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="117">
-          <caret line="26" column="0" lean-forward="false" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/br/ufsm/csi/seguranca/dao/HibernateDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="124">
-          <caret line="73" column="0" lean-forward="false" selection-start-line="73" selection-start-column="0" selection-end-line="73" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/jsp/listarVeiculos.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="249">
-          <caret line="27" column="30" lean-forward="false" selection-start-line="27" selection-start-column="13" selection-end-line="27" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/jsp/listaFuncionarios.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="15" column="28" lean-forward="true" selection-start-line="15" selection-start-column="28" selection-end-line="15" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://table:/b95ec7a1/f0bb5bae-6298-49e0-bc18-c88dd0532461/LavagemDeVeiculos.public.cliente">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://src:table:/b95ec7a1/f0bb5bae-6298-49e0-bc18-c88dd0532461/LavagemDeVeiculos.public.cliente">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="2" lean-forward="true" selection-start-line="7" selection-start-column="2" selection-end-line="7" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://src:table:/b95ec7a1/f0bb5bae-6298-49e0-bc18-c88dd0532461/LavagemDeVeiculos.public.funcionario">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="2" lean-forward="false" selection-start-line="9" selection-start-column="2" selection-end-line="9" selection-end-column="2" />
         </state>
       </provider>
     </entry>
@@ -918,52 +788,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/jsp/criaFuncionario.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="11" lean-forward="true" selection-start-line="11" selection-start-column="11" selection-end-line="11" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/br/ufsm/csi/seguranca/Util/UtilFuncionario.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="218">
-          <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="23" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/jsp/criaVeiculo.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="18" column="38" lean-forward="true" selection-start-line="18" selection-start-column="38" selection-end-line="18" selection-end-column="38" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/br/ufsm/csi/seguranca/controller/VeiculoController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="166">
-          <caret line="63" column="47" lean-forward="true" selection-start-line="63" selection-start-column="47" selection-end-line="63" selection-end-column="47" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/br/ufsm/csi/seguranca/Util/UtilVeiculo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="83" lean-forward="true" selection-start-line="12" selection-start-column="83" selection-end-line="12" selection-end-column="83" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/br/ufsm/csi/seguranca/model/Funcionario.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
@@ -984,73 +808,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/jsp/usuario.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/jsp/listaClientes.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="561">
-          <caret line="33" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/br/ufsm/csi/seguranca/model/Veiculo.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
           <caret line="11" column="28" lean-forward="false" selection-start-line="11" selection-start-column="28" selection-end-line="11" selection-end-column="28" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#818#819#0" expanded="true" />
-            <element signature="e#848#849#0" expanded="true" />
-            <element signature="e#895#896#0" expanded="true" />
-            <element signature="e#933#934#0" expanded="true" />
-            <element signature="e#996#997#0" expanded="true" />
-            <element signature="e#1030#1031#0" expanded="true" />
-            <element signature="e#1082#1083#0" expanded="true" />
-            <element signature="e#1128#1129#0" expanded="true" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#818#819#0" expanded="false" />
+            <element signature="e#848#849#0" expanded="false" />
+            <element signature="e#895#896#0" expanded="false" />
+            <element signature="e#933#934#0" expanded="false" />
+            <element signature="e#996#997#0" expanded="false" />
+            <element signature="e#1030#1031#0" expanded="false" />
+            <element signature="e#1082#1083#0" expanded="false" />
+            <element signature="e#1128#1129#0" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/br/ufsm/csi/seguranca/controller/ClienteController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="833">
-          <caret line="62" column="0" lean-forward="false" selection-start-line="62" selection-start-column="0" selection-end-line="62" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/br/ufsm/csi/seguranca/controller/HelloController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="16" column="1" lean-forward="false" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/br/ufsm/csi/seguranca/controller/FuncionarioController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="25" column="0" lean-forward="false" selection-start-line="25" selection-start-column="0" selection-end-line="33" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/jsp/hello.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" column="9" lean-forward="false" selection-start-line="20" selection-start-column="9" selection-end-line="20" selection-end-column="9" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1058,14 +830,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="408">
           <caret line="24" column="59" lean-forward="false" selection-start-line="24" selection-start-column="59" selection-end-line="24" selection-end-column="59" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/br/ufsm/csi/seguranca/controller/UsuarioController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="850">
-          <caret line="68" column="40" lean-forward="false" selection-start-line="68" selection-start-column="28" selection-end-line="68" selection-end-column="40" />
           <folding />
         </state>
       </provider>
@@ -1078,19 +842,292 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/br/ufsm/csi/seguranca/model/Log.java">
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/jsp/hello.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-324">
-          <caret line="14" column="23" lean-forward="true" selection-start-line="14" selection-start-column="23" selection-end-line="14" selection-end-column="23" />
+        <state relative-caret-position="339">
+          <caret line="23" column="7" lean-forward="true" selection-start-line="23" selection-start-column="7" selection-end-line="23" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/jsp/log.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="7" lean-forward="true" selection-start-line="14" selection-start-column="7" selection-end-line="14" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/jsp/usuario.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/WEB-INF/jsp/criaCliente.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="101">
-          <caret line="12" column="8" lean-forward="true" selection-start-line="12" selection-start-column="8" selection-end-line="12" selection-end-column="8" />
+        <state relative-caret-position="391">
+          <caret line="23" column="12" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/jsp/criaFuncionario.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="6" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/jsp/criaVeiculo.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="23" column="8" lean-forward="false" selection-start-line="23" selection-start-column="8" selection-end-line="23" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/dispatcher-servlet.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="196">
+          <caret line="40" column="50" lean-forward="false" selection-start-line="40" selection-start-column="50" selection-end-line="40" selection-end-column="50" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/hibernate.cfg.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="59" lean-forward="false" selection-start-line="8" selection-start-column="59" selection-end-line="8" selection-end-column="59" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/jsp/listaClientes.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="352">
+          <caret line="28" column="16" lean-forward="false" selection-start-line="28" selection-start-column="16" selection-end-line="28" selection-end-column="74" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/jsp/editaFuncionario.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="70">
+          <caret line="11" column="61" lean-forward="true" selection-start-line="11" selection-start-column="61" selection-end-line="11" selection-end-column="61" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/jsp/editaVeiculo.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="15" column="93" lean-forward="true" selection-start-line="15" selection-start-column="93" selection-end-line="15" selection-end-column="93" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/jsp/listarVeiculos.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="233">
+          <caret line="24" column="74" lean-forward="true" selection-start-line="24" selection-start-column="74" selection-end-line="24" selection-end-column="74" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/jsp/listaFuncionarios.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="26" column="25" lean-forward="true" selection-start-line="26" selection-start-column="25" selection-end-line="26" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/br/ufsm/csi/seguranca/filtros/FiltroSeguranca.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="23" column="64" lean-forward="false" selection-start-line="23" selection-start-column="47" selection-end-line="23" selection-end-column="64" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://src:table:/b95ec7a1/f0bb5bae-6298-49e0-bc18-c88dd0532461/LavagemDeVeiculos.public.funcionario">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="11" lean-forward="true" selection-start-line="8" selection-start-column="11" selection-end-line="8" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/br/ufsm/csi/seguranca/Util/UtilVeiculo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="12" column="68" lean-forward="true" selection-start-line="12" selection-start-column="68" selection-end-line="12" selection-end-column="68" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://src:table:/b95ec7a1/f0bb5bae-6298-49e0-bc18-c88dd0532461/LavagemDeVeiculos.public.cliente">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="2" lean-forward="false" selection-start-line="3" selection-start-column="2" selection-end-line="3" selection-end-column="2" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://table:/b95ec7a1/f0bb5bae-6298-49e0-bc18-c88dd0532461/LavagemDeVeiculos.public.cliente">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/br/ufsm/csi/seguranca/Util/UtilFuncionario.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="60" lean-forward="false" selection-start-line="13" selection-start-column="60" selection-end-line="13" selection-end-column="60" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/br/ufsm/csi/seguranca/controller/HelloController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="16" column="1" lean-forward="false" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/br/ufsm/csi/seguranca/model/Log.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="78" column="19" lean-forward="true" selection-start-line="78" selection-start-column="19" selection-end-line="78" selection-end-column="19" />
+          <folding>
+            <element signature="e#1484#1485#0" expanded="true" />
+            <element signature="e#1511#1512#0" expanded="true" />
+            <element signature="e#1549#1550#0" expanded="true" />
+            <element signature="e#1581#1582#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/br/ufsm/csi/seguranca/controller/FuncionarioController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="82" column="9" lean-forward="true" selection-start-line="82" selection-start-column="9" selection-end-line="82" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/br/ufsm/csi/seguranca/controller/VeiculoController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="203">
+          <caret line="41" column="5" lean-forward="true" selection-start-line="41" selection-start-column="5" selection-end-line="41" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://src:table:/b95ec7a1/f0bb5bae-6298-49e0-bc18-c88dd0532461/LavagemDeVeiculos.public.log">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="2" lean-forward="false" selection-start-line="7" selection-start-column="2" selection-end-line="7" selection-end-column="2" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://table:/b95ec7a1/f0bb5bae-6298-49e0-bc18-c88dd0532461/LavagemDeVeiculos.public.log">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/br/ufsm/csi/seguranca/dao/HibernateDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-68">
+          <caret line="26" column="42" lean-forward="true" selection-start-line="26" selection-start-column="42" selection-end-line="26" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/br/ufsm/csi/seguranca/dao/HibernateDAODecorator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="20" column="38" lean-forward="true" selection-start-line="20" selection-start-column="38" selection-end-line="20" selection-end-column="38" />
+          <folding>
+            <element signature="e#659#660#0" expanded="true" />
+            <element signature="e#1262#1263#0" expanded="true" />
+            <element signature="e#1323#1324#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/br/ufsm/csi/seguranca/dao/HibernateDAOInterface.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="16" column="17" lean-forward="false" selection-start-line="16" selection-start-column="17" selection-end-line="16" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/br/ufsm/csi/seguranca/Util/UtilTokenGenerator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="42" lean-forward="true" selection-start-line="10" selection-start-column="42" selection-end-line="10" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/jsp/editaCliente.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="9">
+          <caret line="12" column="66" lean-forward="false" selection-start-line="12" selection-start-column="61" selection-end-line="12" selection-end-column="66" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/br/ufsm/csi/seguranca/controller/UsuarioController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="57" column="50" lean-forward="true" selection-start-line="57" selection-start-column="50" selection-end-line="57" selection-end-column="50" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/br/ufsm/csi/seguranca/Util/UtilCliente.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="256">
+          <caret line="21" column="5" lean-forward="true" selection-start-line="21" selection-start-column="5" selection-end-line="21" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/br/ufsm/csi/seguranca/Util/UtilLog.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="22" column="5" lean-forward="false" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/br/ufsm/csi/seguranca/controller/ClienteController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="169">
+          <caret line="38" column="12" lean-forward="true" selection-start-line="38" selection-start-column="12" selection-end-line="38" selection-end-column="12" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

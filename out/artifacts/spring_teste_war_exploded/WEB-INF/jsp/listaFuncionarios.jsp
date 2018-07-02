@@ -21,7 +21,10 @@
                     <td>${f.nome}</td>
                     <td>${f.login}</td>
                     <td>${f.veiculo.placa}</td>
-                    <td><a href="removeFuncionario.priv?&id=${f.id}"> Remover </a></td>
+                    <td>
+                        <a href="paginaEditaFuncionario.priv?&id=${f.id}"> Editar </a>
+                        <a href="removeFuncionario.priv?&id=${f.id}"> Remover </a>
+                    </td>
                 </tr>
             </c:forEach>
         <br>
