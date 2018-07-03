@@ -12,12 +12,15 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import javax.net.ssl.SSLEngine;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
+import java.io.IOException;
 import java.io.UnsupportedEncodingException;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 import java.util.Collection;
 import java.util.HashMap;
 import java.util.Map;
+
+import static br.ufsm.csi.seguranca.Util.UtilVerifyRecaptcha.verify;
 
 
 /**
@@ -40,24 +43,25 @@ public class UsuarioController {
 
     @Transactional
     @RequestMapping("login.html")
-    public String login(String login, String senha, HttpSession session, Model model, HttpServletRequest request) throws UnsupportedEncodingException, NoSuchAlgorithmException {
+    public String login(String login, String senha, HttpSession session, Model model, HttpServletRequest request) throws IOException, NoSuchAlgorithmException {
 
         Map<String, Object> map = new HashMap<>();
         map.put("login", login);
-
         MessageDigest md = MessageDigest.getInstance("SHA-256");
         map.put("senha", md.digest(senha.getBytes("ISO-8859-1")) );
-
         Collection funcionarios = hibernateDAO.listaObjetosEquals(Funcionario.class, map);
 
-        if (funcionarios == null || funcionarios.isEmpty()) {
-            model.addAttribute("msgDoServidor", "acesso-negado");
-            return "../../index";
-        } else {
+        String gRecaptchaResponse = request.getParameter("g-recaptcha-response");
+        boolean verify = verify(gRecaptchaResponse);
+
+        if ( verify && !(funcionarios == null || funcionarios.isEmpty()) ) {
             session.invalidate();
             HttpSession nS = request.getSession();
             nS.setAttribute("funcionarioLogado", funcionarios.toArray()[0] );
             return "hello";
+        } else {
+            model.addAttribute("msgDoServidor", "acesso-negado");
+            return "../../index";
         }
     }
 

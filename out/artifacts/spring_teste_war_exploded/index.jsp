@@ -3,12 +3,14 @@
 <html>
   <head>
     <title>Login</title>
+    <script src='https://www.google.com/recaptcha/api.js'></script>
   </head>
   <body>
 
   <h1>Efetuar login</h1>
 
   <form action="login.html" id="login" method="post">
+    <div class="g-recaptcha" data-sitekey="6LcdBWIUAAAAAGri2WMa3cy_eYHVznHu_MVvIntw"></div>
   </form>
     <label for="username">Usuário</label>
     <input form="login" type="text" id="username" name="login" />

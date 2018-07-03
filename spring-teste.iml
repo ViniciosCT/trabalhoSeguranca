@@ -42,5 +42,8 @@
     <orderEntry type="library" name="javax.servlet:javax.servlet-api:3.0.1" level="project" />
     <orderEntry type="library" name="org.owasp.encoder:encoder-esapi:1.2.1" level="project" />
     <orderEntry type="library" name="postgresql-9.3-1101-jdbc41" level="project" />
+    <orderEntry type="library" name="javax.validation:validation-api:2.0.0.Final" level="project" />
+    <orderEntry type="library" name="com.google.code.maven-play-plugin.net.tanesha.recaptcha4j:recaptcha4j:0.0.8" level="project" />
+    <orderEntry type="library" name="org.glassfish:javax.json:1.1.2" level="project" />
   </component>
 </module>
