@@ -13,13 +13,13 @@
 </form>
 <br>
 <label form="cadastro" for="placa">Placa</label>
-<input form="cadastro" type="text" id="placa" name="placa" value="${veiculo.placa}" required>
+<input form="cadastro" type="text" id="placa" name="placa" value="<c:out value='${veiculo.placa}'/>" required>
 
-<p> Escolha um Cliente:  Cliente atual: ${veiculo.cliente.nome}</p>
-<select name="idCliente" form="cadastro">,
+<p> Escolha um Cliente:  Cliente atual: <c:out value='${veiculo.cliente.nome}'/></p>
+<select name="idCliente" form="cadastro">
     <option value="">Null</option>
     <c:forEach items="${clientes}" var="c">
-        <option value="${c.id}">${c.nome}</option>
+        <option value="${c.id}"><c:out value="${c.nome}"/></option>
     </c:forEach>
 </select>
 <br>

@@ -32,15 +32,6 @@ public class UsuarioController {
     @Autowired
     private HibernateDAO hibernateDAO;
 
-//    @Transactional
-//    @RequestMapping("cria-usuario.html")
-//    public String criaUsuario(Usuario usuario, String senhaStr) throws NoSuchAlgorithmException, UnsupportedEncodingException {
-//        MessageDigest md = MessageDigest.getInstance("SHA-256");
-//        usuario.setSenha(md.digest(senhaStr.getBytes("ISO-8859-1")));
-//        hibernateDAO.criaObjeto(usuario);
-//        return "usuario";
-//    }
-
     @Transactional
     @RequestMapping("login.html")
     public String login(String login, String senha, HttpSession session, Model model, HttpServletRequest request) throws IOException, NoSuchAlgorithmException {
@@ -81,35 +72,5 @@ public class UsuarioController {
         session.invalidate();
         return "../../index";
     }
-
-//    @Transactional
-//    @RequestMapping("cria-log.priv")
-//    public String criaLog(Long idUsuario,
-//                          Long idObjeto,
-//                          String classe,
-//                          @DateTimeFormat(pattern = "dd/MM/yyyy HH:mm") Date dataHora) throws ClassNotFoundException {
-//        Usuario usuario = (Usuario) hibernateDAO.carregaObjeto(Usuario.class, idUsuario);
-//        Log log = new Log();
-//        log.setClasse(Class.forName(classe));
-//        log.setIdObjeto(idObjeto);
-//        log.setDataHora(dataHora);
-//        log.setUsuario(usuario);
-//        hibernateDAO.criaObjeto(log);
-//        return "log";
-//    }
-//
-//    @Transactional
-//    @RequestMapping("lista-usuarios.html")
-//    public String listaUsuarios(Model model, String nome, String login) {
-//        Map<String, String> m = new HashMap<>();
-//        if (nome != null && !nome.isEmpty()) {
-//            m.put("nome", nome);
-//        }
-//        if (login != null && !login.isEmpty()) {
-//            m.put("login", login);
-//        }
-//        model.addAttribute("usuarios", hibernateDAO.listaObjetos(Usuario.class, m, null, null, false));
-//        return "listaFuncionarios";
-//    }
 
 }

@@ -7,9 +7,18 @@ import br.ufsm.csi.seguranca.model.Log;
 import javax.servlet.http.HttpSession;
 import java.util.Date;
 
-public class UtilLog {
+public class UtilLogSingleton {
 
-    public static void gerarLog(Class classe ,Long idObject, Log.Tipo tipo, HibernateDAO hibernateDAO, HttpSession session){
+    private static UtilLogSingleton uniqueInstance = new UtilLogSingleton();
+
+    private UtilLogSingleton() {
+    }
+
+    public static UtilLogSingleton getInstance() {
+        return uniqueInstance;
+    }
+
+    public void gerarLog(Class classe ,Long idObject, Log.Tipo tipo, HibernateDAO hibernateDAO, HttpSession session){
         Log log = new Log();
         hibernateDAO.criaObjeto(log);
         log.setClasse(classe);

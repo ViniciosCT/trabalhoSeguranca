@@ -1,5 +1,6 @@
 package br.ufsm.csi.seguranca.controller;
 
+import br.ufsm.csi.seguranca.Util.UtilLogSingleton;
 import br.ufsm.csi.seguranca.dao.HibernateDAO;
 import br.ufsm.csi.seguranca.model.Funcionario;
 import br.ufsm.csi.seguranca.model.Log;
@@ -18,8 +19,6 @@ import java.security.NoSuchAlgorithmException;
 import java.util.Collection;
 import java.util.HashMap;
 import java.util.Map;
-
-import static br.ufsm.csi.seguranca.Util.UtilLog.gerarLog;
 
 @Controller
 public class FuncionarioController {
@@ -60,14 +59,14 @@ public class FuncionarioController {
         funcionario.setVeiculo(veiculo);
         if(funcionario.getId() == null) {
             hibernateDAO.criaObjeto(funcionario);
-            gerarLog(Funcionario.class, funcionario.getId(), Log.Tipo.Create, hibernateDAO, session);
+            UtilLogSingleton.getInstance().gerarLog(Funcionario.class, funcionario.getId(), Log.Tipo.Create, hibernateDAO, session);
         }else{
             Funcionario funcionarioBanco = (Funcionario) hibernateDAO.carregaObjeto(Funcionario.class, funcionario.getId());
             funcionarioBanco.setNome( funcionario.getNome() );
             funcionarioBanco.setVeiculo( funcionario.getVeiculo() );
             funcionarioBanco.setSenha( funcionario.getSenha() );
             funcionarioBanco.setLogin( funcionario.getLogin() );
-            gerarLog(Funcionario.class, funcionario.getId(), Log.Tipo.Update, hibernateDAO, session);
+            UtilLogSingleton.getInstance().gerarLog(Funcionario.class, funcionario.getId(), Log.Tipo.Update, hibernateDAO, session);
         }
         return "redirect:gerenciarFuncionarios.priv";
     }
@@ -79,7 +78,7 @@ public class FuncionarioController {
         map2.put("login", "");
         Collection<Funcionario> funcionarios = hibernateDAO.listaObjetos(Funcionario.class, map2, null, null, false);
         for(Funcionario funcionario : funcionarios){
-            gerarLog(Funcionario.class, funcionario.getId(), Log.Tipo.Read, hibernateDAO, session);
+            UtilLogSingleton.getInstance().gerarLog(Funcionario.class, funcionario.getId(), Log.Tipo.Read, hibernateDAO, session);
         }
         model.addAttribute("funcionarios" , funcionarios);
         return "listaFuncionarios";
@@ -89,7 +88,7 @@ public class FuncionarioController {
     @RequestMapping(value = "removeFuncionario.priv", method = RequestMethod.GET)
     public String removeFuncionario(Long id, HttpSession session){
         Funcionario funcionario = (Funcionario) hibernateDAO.carregaObjeto(Funcionario.class, id);
-        gerarLog(Funcionario.class, funcionario.getId(), Log.Tipo.Delete, hibernateDAO, session);
+        UtilLogSingleton.getInstance().gerarLog(Funcionario.class, funcionario.getId(), Log.Tipo.Delete, hibernateDAO, session);
         hibernateDAO.removeObjeto(funcionario);
         return "redirect:gerenciarFuncionarios.priv";
     }

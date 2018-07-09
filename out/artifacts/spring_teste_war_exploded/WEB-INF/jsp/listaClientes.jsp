@@ -7,33 +7,36 @@
 </head>
 <body>
 
-<h2>Lista de Clientes: </h2>
-
-<table>
-    <tr>
-        <th>Nome</th>
-        <th>Veiculos</th>
-        <th>Opções</th>
-    </tr>
-    <c:forEach items="${clientes}" var="c">
-        <tr>
-            <td>${c.nome}</td>
-            <td>
-                <ul>
-                    <c:forEach items="${c.veiculos}" var="v">
-                        <li>${v.placa}</li>
-                    </c:forEach>
-                </ul>
-            </td>
-            <td>
-                <a href="paginaEditaCliente.priv?&id=${c.id}"> Editar </a>
-                <a href="removeCliente.priv?&id=${c.id}"> Remover </a>
-            </td>
-        </tr>
-    </c:forEach>
+    <c:import url="menu.jsp" />
     <br>
-    <a href="paginaCriaCliente.priv">Criar novo cliente</a>
-</table>
+
+    <h2>Lista de Clientes: </h2>
+
+    <table>
+        <tr>
+            <th>Nome</th>
+            <th>Veiculos</th>
+            <th>Opções</th>
+        </tr>
+        <c:forEach items="${clientes}" var="c">
+            <tr>
+                <td><c:out value="${c.nome}" /></td>
+                <td>
+                    <ul>
+                        <c:forEach items="${c.veiculos}" var="v">
+                            <li><c:out value="${v.placa}"/></li>
+                        </c:forEach>
+                    </ul>
+                </td>
+                <td>
+                    <a href="paginaEditaCliente.priv?&id=${c.id}"> Editar </a>
+                    <a href="removeCliente.priv?&id=${c.id}"> Remover </a>
+                </td>
+            </tr>
+        </c:forEach>
+        <br>
+        <a href="paginaCriaCliente.priv">Criar novo cliente</a>
+    </table>
 
 </body>
 </html>

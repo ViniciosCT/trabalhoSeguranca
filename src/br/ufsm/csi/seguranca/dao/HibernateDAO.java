@@ -1,6 +1,6 @@
 package br.ufsm.csi.seguranca.dao;
 
-import br.ufsm.csi.seguranca.model.exemplos.Usuario;
+import br.ufsm.csi.seguranca.model.Funcionario;
 import org.hibernate.Criteria;
 import org.hibernate.SessionFactory;
 import org.hibernate.criterion.DetachedCriteria;
@@ -21,22 +21,19 @@ import java.util.Map;
  * Created by cpol on 31/05/2017.
  */
 @Repository
-public class HibernateDAO implements HibernateDAOInterface {
+public class HibernateDAO{
 
     @Autowired
     private SessionFactory sessionFactory;
 
-    @Override
     public void criaObjeto(Object o) {
         sessionFactory.getCurrentSession().save(o);
     }
 
-    @Override
     public void removeObjeto(Object o) {
         sessionFactory.getCurrentSession().remove(o);
     }
 
-    @Override
     public Collection listaObjetos(Class classe,
                                            Map<String, String> likeMap,
                                            Integer maxResults,
@@ -61,7 +58,6 @@ public class HibernateDAO implements HibernateDAOInterface {
         return criteria.list();
     }
 
-    @Override
     public Collection<Object> listaObjetosEquals(Class classe, Map<String, Object> equalsMap) {
         DetachedCriteria detachedCriteria = DetachedCriteria.forClass(classe);
         detachedCriteria.setResultTransformer(Criteria.DISTINCT_ROOT_ENTITY);
@@ -72,34 +68,31 @@ public class HibernateDAO implements HibernateDAOInterface {
         return detachedCriteria.getExecutableCriteria(sessionFactory.getCurrentSession()).list();
     }
 
-    @Override
     public Object carregaObjeto(Class classe, Serializable id) {
         return sessionFactory.getCurrentSession().get(classe, id);
     }
 
-    @Override
-    public Usuario findUsuario(String login, String senha) throws NoSuchAlgorithmException, UnsupportedEncodingException {
+    public Funcionario findUsuario(String login, String senha) throws NoSuchAlgorithmException, UnsupportedEncodingException {
         MessageDigest md = MessageDigest.getInstance("SHA-256");
         byte[] senhaSHA = md.digest(senha.getBytes("ISO-8859-1"));
-        DetachedCriteria detachedCriteria = DetachedCriteria.forClass(Usuario.class);
+        DetachedCriteria detachedCriteria = DetachedCriteria.forClass(Funcionario.class);
         detachedCriteria.add(Restrictions.eq("login", login));
         detachedCriteria.add(Restrictions.eq("senha", senhaSHA));
         Criteria criteria = detachedCriteria.getExecutableCriteria(sessionFactory.getCurrentSession());
         criteria.setMaxResults(10);
-        return (Usuario) criteria.uniqueResult();
+        return (Funcionario) criteria.uniqueResult();
     }
 
-    @Override
-    public Usuario findUsuarioHQL(String login, String senha) throws NoSuchAlgorithmException, UnsupportedEncodingException {
+    public Funcionario findUsuarioHQL(String login, String senha) throws NoSuchAlgorithmException, UnsupportedEncodingException {
         MessageDigest md = MessageDigest.getInstance("SHA-256");
         byte[] senhaSHA = md.digest(senha.getBytes("ISO-8859-1"));
         Query q = sessionFactory.getCurrentSession().createQuery(
-                "select u from br.ufsm.csi.seguranca.model.Usuario as u " +
+                "select u from br.ufsm.csi.seguranca.model.Funcionario as u " +
                         "where u.login = :login and u.senha = :senha"
         );
         q.setParameter("login", login);
         q.setParameter("senha", senhaSHA);
-        return (Usuario) q.uniqueResult();
+        return (Funcionario) q.uniqueResult();
     }
 
 }

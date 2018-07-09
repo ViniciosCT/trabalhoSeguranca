@@ -1,8 +1,8 @@
 package br.ufsm.csi.seguranca.controller;
 
+import br.ufsm.csi.seguranca.Util.UtilLogSingleton;
 import br.ufsm.csi.seguranca.Util.UtilTokenGenerator;
 import br.ufsm.csi.seguranca.dao.HibernateDAO;
-import br.ufsm.csi.seguranca.dao.HibernateDAODecorator;
 import br.ufsm.csi.seguranca.model.Cliente;
 import br.ufsm.csi.seguranca.model.Log;
 import br.ufsm.csi.seguranca.model.Veiculo;
@@ -21,7 +21,6 @@ import java.util.Map;
 
 import static br.ufsm.csi.seguranca.Util.UtilCliente.addNovaListaDeVeiculos;
 import static br.ufsm.csi.seguranca.Util.UtilCliente.removeRelacoes;
-import static br.ufsm.csi.seguranca.Util.UtilLog.gerarLog;
 
 @Controller
 public class ClienteController {
@@ -36,7 +35,7 @@ public class ClienteController {
         map.put("nome", "");
         Collection<Cliente> clientes = (Collection<Cliente>) hibernateDAO.listaObjetos(Cliente.class, map, null, null, false);
         for(Cliente cliente : clientes){
-            gerarLog(Cliente.class, cliente.getId(), Log.Tipo.Read, hibernateDAO, session);
+            UtilLogSingleton.getInstance().gerarLog(Cliente.class, cliente.getId(), Log.Tipo.Read, hibernateDAO, session);
         }
         model.addAttribute("clientes", clientes);
         return "listaClientes";
@@ -96,13 +95,13 @@ public class ClienteController {
         }
         if(cliente.getId() == null) {
             hibernateDAO.criaObjeto(cliente);
-            gerarLog(Cliente.class, cliente.getId(), Log.Tipo.Create, hibernateDAO, session);
+            UtilLogSingleton.getInstance().gerarLog(Cliente.class, cliente.getId(), Log.Tipo.Create, hibernateDAO, session);
         }else{
             if( token != null && tokenSession.equals(token) ) {
                 Cliente clienteBanco = (Cliente) hibernateDAO.carregaObjeto(Cliente.class, cliente.getId());
                 clienteBanco.setNome(cliente.getNome());
                 clienteBanco.setVeiculos(cliente.getVeiculos());
-                gerarLog(Cliente.class, cliente.getId(), Log.Tipo.Update, hibernateDAO, session);
+                UtilLogSingleton.getInstance().gerarLog(Cliente.class, cliente.getId(), Log.Tipo.Update, hibernateDAO, session);
             }
         }
         return "redirect:gerenciarClientes.priv";
@@ -117,7 +116,7 @@ public class ClienteController {
             veiculo.setCliente(null);
         }
         cliente.setVeiculos(null);
-        gerarLog(Cliente.class, cliente.getId(), Log.Tipo.Delete, hibernateDAO, session);
+        UtilLogSingleton.getInstance().gerarLog(Cliente.class, cliente.getId(), Log.Tipo.Delete, hibernateDAO, session);
         hibernateDAO.removeObjeto(cliente);
         return "redirect:gerenciarClientes.priv";
     }

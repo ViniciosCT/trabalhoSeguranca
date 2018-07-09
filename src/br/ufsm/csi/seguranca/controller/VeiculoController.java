@@ -1,8 +1,8 @@
 package br.ufsm.csi.seguranca.controller;
 
+import br.ufsm.csi.seguranca.Util.UtilLogSingleton;
 import br.ufsm.csi.seguranca.dao.HibernateDAO;
 import br.ufsm.csi.seguranca.model.Cliente;
-import br.ufsm.csi.seguranca.model.Funcionario;
 import br.ufsm.csi.seguranca.model.Log;
 import br.ufsm.csi.seguranca.model.Veiculo;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -13,13 +13,11 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
 import javax.servlet.http.HttpSession;
-import java.security.MessageDigest;
 import java.util.Collection;
 import java.util.Date;
 import java.util.HashMap;
 import java.util.Map;
 
-import static br.ufsm.csi.seguranca.Util.UtilLog.gerarLog;
 import static br.ufsm.csi.seguranca.Util.UtilVeiculo.setFuncionarios;
 
 @Controller
@@ -35,7 +33,7 @@ public class VeiculoController {
         map.put("placa", "");
         Collection<Veiculo> veiculos = hibernateDAO.listaObjetos(Veiculo.class, map, null, null, false);
         for(Veiculo veiculo : veiculos){
-            gerarLog(Veiculo.class, veiculo.getId(), Log.Tipo.Read, hibernateDAO, session);
+            UtilLogSingleton.getInstance().gerarLog(Veiculo.class, veiculo.getId(), Log.Tipo.Read, hibernateDAO, session);
         }
         model.addAttribute("veiculos", veiculos);
         return "listarVeiculos";
@@ -75,13 +73,13 @@ public class VeiculoController {
         veiculo.setDataEntrada( new Date() );
         if(veiculo.getId() == null) {
             hibernateDAO.criaObjeto(veiculo);
-            gerarLog(Veiculo.class, veiculo.getId(), Log.Tipo.Create, hibernateDAO, session);
+            UtilLogSingleton.getInstance().gerarLog(Veiculo.class, veiculo.getId(), Log.Tipo.Create, hibernateDAO, session);
         }else {
             Veiculo veiculoBanco = (Veiculo) hibernateDAO.carregaObjeto(Veiculo.class, veiculo.getId());
             veiculoBanco.setPlaca( veiculo.getPlaca() );
             veiculoBanco.setCliente( veiculo.getCliente() );
             veiculoBanco.setDataEntrada( veiculo.getDataEntrada() );
-            gerarLog(Veiculo.class, veiculo.getId(), Log.Tipo.Update, hibernateDAO, session);
+            UtilLogSingleton.getInstance().gerarLog(Veiculo.class, veiculo.getId(), Log.Tipo.Update, hibernateDAO, session);
         }
         return "redirect:gerenciarVeiculos.priv";
     }
@@ -91,7 +89,7 @@ public class VeiculoController {
     public String removeVeiculo(Long id, HttpSession session){
         Veiculo veiculo = (Veiculo) hibernateDAO.carregaObjeto(Veiculo.class, id);
         setFuncionarios(veiculo, hibernateDAO);
-        gerarLog(Veiculo.class, veiculo.getId(), Log.Tipo.Delete, hibernateDAO, session);
+        UtilLogSingleton.getInstance().gerarLog(Veiculo.class, veiculo.getId(), Log.Tipo.Delete, hibernateDAO, session);
         hibernateDAO.removeObjeto(veiculo);
         return "redirect:gerenciarVeiculos.priv";
     }

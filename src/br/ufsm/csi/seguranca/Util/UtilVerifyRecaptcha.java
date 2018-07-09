@@ -16,6 +16,7 @@ public class UtilVerifyRecaptcha {
     public static final String url = "https://www.google.com/recaptcha/api/siteverify";
     public static final String secret = "6LcdBWIUAAAAAJkr-YxuzbGTeOXRZVfx2YbNUYlF";
     private final static String USER_AGENT = "Mozilla/5.0";
+
     public static boolean verify(String gRecaptchaResponse) throws IOException {
         if (gRecaptchaResponse == null || "".equals(gRecaptchaResponse)) {
             return false;

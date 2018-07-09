@@ -7,6 +7,9 @@
 </head>
 <body>
 
+    <c:import url="menu.jsp" />
+    <br>
+
     <h2>Lista de funcionarios: </h2>
 
     <table>
@@ -18,9 +21,9 @@
         </tr>
             <c:forEach items="${funcionarios}" var="f">
                 <tr>
-                    <td>${f.nome}</td>
-                    <td>${f.login}</td>
-                    <td>${f.veiculo.placa}</td>
+                    <td> <c:out value="${f.nome}"/> </td>
+                    <td> <c:out value="${f.login}"/> </td>
+                    <td> <c:out value="${f.veiculo.placa}"/> </td>
                     <td>
                         <a href="paginaEditaFuncionario.priv?&id=${f.id}"> Editar </a>
                         <a href="removeFuncionario.priv?&id=${f.id}"> Remover </a>

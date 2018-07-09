@@ -23,7 +23,7 @@
     <p> Escolha um veíulo:</p>
     <select name="idVeiculo" form="cadastro">
         <c:forEach items="${veiculos}" var="v">
-            <option value="${v.id}">${v.placa}</option>
+            <option value="${v.id}"><c:out value="${v.placa}"/></option>
         </c:forEach>
     </select>
     <br>

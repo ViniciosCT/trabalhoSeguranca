@@ -6,6 +6,9 @@
 </head>
 <body>
 
+    <c:import url="menu.jsp" />
+    <br>
+
     <h2>Lista de Veiculos na loja: </h2>
 
     <table>
@@ -16,9 +19,9 @@
         </tr>
         <c:forEach items="${funcionarios}" var="f">
             <tr>
-                <td>${f.nome}</td>
-                <td>${f.veiculo.placa}</td>
-                <td>${f.veiculo.cliente.nome}</td>
+                <td><c:out value="${f.nome}"/></td>
+                <td><c:out value="${f.veiculo.placa}"/></td>
+                <td><c:out value="${f.veiculo.cliente.nome}"/></td>
             </tr>
         </c:forEach>
     </table>

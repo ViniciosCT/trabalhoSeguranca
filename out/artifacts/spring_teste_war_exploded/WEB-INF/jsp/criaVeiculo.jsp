@@ -18,7 +18,7 @@
     <select name="idCliente" form="cadastro">,
         <option value="">Null</option>
         <c:forEach items="${clientes}" var="c">
-            <option value="${c.id}">${c.nome}</option>
+            <option value="${c.id}"><c:out value="${c.nome}"/></option>
         </c:forEach>
     </select>
     <br>

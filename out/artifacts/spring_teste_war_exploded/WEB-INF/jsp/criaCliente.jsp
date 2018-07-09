@@ -18,7 +18,7 @@
         <c:forEach items="${veiculos}" var="v">
             <label form="cadastro" for="${v.id}">
                 <input form="cadastro" name="idsVeiculos" value="${v.id}" type="checkbox" id="${v.id}" />
-                <span>${v.placa}</span>
+                <span><c:out value="${v.placa}"/></span>
             </label>
         </c:forEach>
     </label>
