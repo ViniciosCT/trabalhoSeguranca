@@ -6,9 +6,6 @@
 </head>
 <body>
 
-    <c:import url="menu.jsp" />
-    <br>
-
     <h2>Lista de Veiculos na loja: </h2>
 
     <table>
